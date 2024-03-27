@@ -1,7 +1,20 @@
+.feature-card-feature-card {
+  min-height: var(--dl-size-size-xlarge);
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.feature-card-feature-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.feature-card-icon {
+  margin-right: 0px;
+}
 .feature-card-container {
   gap: var(--dl-space-space-unit);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -11,7 +24,7 @@
 }
 @media(max-width: 767px) {
   .feature-card-feature-card {
-    flex-direction: row;
+    flex-direction: column;
   }
   .feature-card-container {
     flex-direction: column;

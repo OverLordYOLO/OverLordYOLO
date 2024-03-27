@@ -184,6 +184,7 @@
     padding: var(--dl-space-space-unit);
   }
   .header-mobile-menu {
+    display: none;
     padding: 16px;
   }
 }
