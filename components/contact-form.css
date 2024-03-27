@@ -1,0 +1,28 @@
+.contact-form-container {
+  display: flex;
+  position: relative;
+}
+.contact-form-container1 {
+  width: 100vw;
+  height: 681px;
+  max-width: var(--dl-size-size-maxwidth);
+}
+.contact-form-container2 {
+  display: contents;
+}
+.contact-form-root-class-name {
+  height: auto;
+}
+.contact-form-root-class-name1 {
+  height: auto;
+}
+@media(max-width: 991px) {
+  .contact-form-container1 {
+    height: 681px;
+  }
+}
+@media(max-width: 479px) {
+  .contact-form-container1 {
+    height: 681px;
+  }
+}

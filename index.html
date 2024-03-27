@@ -1,13 +1,600 @@
-<!DOCTYPE html><html lang="cs" data-bs-theme="light" data-critters-container><head>
-  <meta charset="utf-8">
-  <title>JirkaDanovyPoradce</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>@charset "UTF-8";.bg-darkblue{position:relative}.bg-darkblue:before{content:"";position:absolute;background-color:#0d2e45;left:0;top:0;z-index:-2;width:100%;height:100%}.max-width-540{max-width:540px}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}[data-bs-theme=dark]{color-scheme:dark;--bs-body-color:#dee2e6;--bs-body-color-rgb:222,226,230;--bs-body-bg:#212529;--bs-body-bg-rgb:33,37,41;--bs-emphasis-color:#fff;--bs-emphasis-color-rgb:255,255,255;--bs-secondary-color:rgba(222, 226, 230, .75);--bs-secondary-color-rgb:222,226,230;--bs-secondary-bg:#343a40;--bs-secondary-bg-rgb:52,58,64;--bs-tertiary-color:rgba(222, 226, 230, .5);--bs-tertiary-color-rgb:222,226,230;--bs-tertiary-bg:#2b3035;--bs-tertiary-bg-rgb:43,48,53;--bs-primary-text-emphasis:#6ea8fe;--bs-secondary-text-emphasis:#a7acb1;--bs-success-text-emphasis:#75b798;--bs-info-text-emphasis:#6edff6;--bs-warning-text-emphasis:#ffda6a;--bs-danger-text-emphasis:#ea868f;--bs-light-text-emphasis:#f8f9fa;--bs-dark-text-emphasis:#dee2e6;--bs-primary-bg-subtle:#031633;--bs-secondary-bg-subtle:#161719;--bs-success-bg-subtle:#051b11;--bs-info-bg-subtle:#032830;--bs-warning-bg-subtle:#332701;--bs-danger-bg-subtle:#2c0b0e;--bs-light-bg-subtle:#343a40;--bs-dark-bg-subtle:#1a1d20;--bs-primary-border-subtle:#084298;--bs-secondary-border-subtle:#41464b;--bs-success-border-subtle:#0f5132;--bs-info-border-subtle:#087990;--bs-warning-border-subtle:#997404;--bs-danger-border-subtle:#842029;--bs-light-border-subtle:#495057;--bs-dark-border-subtle:#343a40;--bs-heading-color:inherit;--bs-link-color:#6ea8fe;--bs-link-hover-color:#8bb9fe;--bs-link-color-rgb:110,168,254;--bs-link-hover-color-rgb:139,185,254;--bs-code-color:#e685b5;--bs-highlight-color:#dee2e6;--bs-highlight-bg:#664d03;--bs-border-color:#495057;--bs-border-color-translucent:rgba(255, 255, 255, .15);--bs-form-valid-color:#75b798;--bs-form-valid-border-color:#75b798;--bs-form-invalid-color:#ea868f;--bs-form-invalid-border-color:#ea868f}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}h1,h2,h4{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color)}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}b{font-weight:bolder}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:underline}a:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb)}img,svg{vertical-align:middle}.lead{font-size:1.25rem;font-weight:300}.display-5{font-size:calc(1.425rem + 2.1vw);font-weight:300;line-height:1.2}@media (min-width:1200px){.display-5{font-size:3rem}}.list-unstyled{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}@media (min-width:1400px){.container{max-width:1320px}}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col{flex:1 0 0%}.row-cols-1>*{flex:0 0 auto;width:100%}.g-4{--bs-gutter-x:1.5rem}.g-4{--bs-gutter-y:1.5rem}.g-5{--bs-gutter-x:3rem}.g-5{--bs-gutter-y:3rem}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 auto;width:50%}}@media (min-width:768px){.row-cols-md-2>*{flex:0 0 auto;width:50%}.col-md-4{flex:0 0 auto;width:33.33333333%}}@media (min-width:992px){.col-lg-6{flex:0 0 auto;width:50%}.col-lg-8{flex:0 0 auto;width:66.66666667%}}.btn{--bs-btn-padding-x:.75rem;--bs-btn-padding-y:.375rem;--bs-btn-font-family: ;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.5;--bs-btn-color:var(--bs-body-color);--bs-btn-bg:transparent;--bs-btn-border-width:var(--bs-border-width);--bs-btn-border-color:transparent;--bs-btn-border-radius:var(--bs-border-radius);--bs-btn-hover-border-color:transparent;--bs-btn-box-shadow:inset 0 1px 0 rgba(255, 255, 255, .15),0 1px 1px rgba(0, 0, 0, .075);--bs-btn-disabled-opacity:.65;--bs-btn-focus-box-shadow:0 0 0 .25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);display:inline-block;padding:var(--bs-btn-padding-y) var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;border:var(--bs-btn-border-width) solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg);transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.btn{transition:none}}.btn:hover{color:var(--bs-btn-hover-color);background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color)}.btn:focus-visible{color:var(--bs-btn-hover-color);background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color);outline:0;box-shadow:var(--bs-btn-focus-box-shadow)}.btn:first-child:active,:not(.btn-check)+.btn:active{color:var(--bs-btn-active-color);background-color:var(--bs-btn-active-bg);border-color:var(--bs-btn-active-border-color)}.btn:first-child:active:focus-visible,:not(.btn-check)+.btn:active:focus-visible{box-shadow:var(--bs-btn-focus-box-shadow)}.btn:disabled{color:var(--bs-btn-disabled-color);pointer-events:none;background-color:var(--bs-btn-disabled-bg);border-color:var(--bs-btn-disabled-border-color);opacity:var(--bs-btn-disabled-opacity)}.btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#0d6efd;--bs-btn-border-color:#0d6efd;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#0b5ed7;--bs-btn-hover-border-color:#0a58ca;--bs-btn-focus-shadow-rgb:49,132,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:#0a58ca;--bs-btn-active-border-color:#0a53be;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, .125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#0d6efd;--bs-btn-disabled-border-color:#0d6efd}.btn-lg{--bs-btn-padding-y:.5rem;--bs-btn-padding-x:1rem;--bs-btn-font-size:1.25rem;--bs-btn-border-radius:var(--bs-border-radius-lg)}.nav{--bs-nav-link-padding-x:1rem;--bs-nav-link-padding-y:.5rem;--bs-nav-link-font-weight: ;--bs-nav-link-color:var(--bs-link-color);--bs-nav-link-hover-color:var(--bs-link-hover-color);--bs-nav-link-disabled-color:var(--bs-secondary-color);display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);text-decoration:none;background:0 0;border:0;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}@media (prefers-reduced-motion:reduce){.nav-link{transition:none}}.nav-link:focus,.nav-link:hover{color:var(--bs-nav-link-hover-color)}.nav-link:focus-visible{outline:0;box-shadow:0 0 0 .25rem #0d6efd40}.nav-link:disabled{color:var(--bs-nav-link-disabled-color);pointer-events:none;cursor:default}.nav-pills{--bs-nav-pills-border-radius:var(--bs-border-radius);--bs-nav-pills-link-active-color:#fff;--bs-nav-pills-link-active-bg:#0d6efd}.nav-pills .nav-link{border-radius:var(--bs-nav-pills-border-radius)}.nav-pills .nav-link.active{color:var(--bs-nav-pills-link-active-color);background-color:var(--bs-nav-pills-link-active-bg)}.text-bg-primary{color:#fff!important;background-color:RGBA(var(--bs-primary-rgb),var(--bs-bg-opacity,1))!important}.link-body-emphasis{color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,1))!important}.link-body-emphasis:focus,.link-body-emphasis:hover{color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75))!important;-webkit-text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,.75))!important;text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,.75))!important}.d-flex{display:flex!important}.d-inline-flex{display:inline-flex!important}.border-top{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important}.border-bottom{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important}.flex-column{flex-direction:column!important}.flex-wrap{flex-wrap:wrap!important}.justify-content-end{justify-content:flex-end!important}.justify-content-center{justify-content:center!important}.justify-content-between{justify-content:space-between!important}.align-items-start{align-items:flex-start!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}.my-4{margin-top:1.5rem!important;margin-bottom:1.5rem!important}.me-2{margin-right:.5rem!important}.mb-0{margin-bottom:0!important}.mb-3{margin-bottom:1rem!important}.ms-3{margin-left:1rem!important}.px-4{padding-right:1.5rem!important;padding-left:1.5rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}.py-4{padding-top:1.5rem!important;padding-bottom:1.5rem!important}.py-5{padding-top:3rem!important;padding-bottom:3rem!important}.pb-4{padding-bottom:1.5rem!important}.gap-2{gap:.5rem!important}.fs-4{font-size:calc(1.275rem + .3vw)!important}.fw-semibold{font-weight:600!important}.fw-bold{font-weight:700!important}.fw-bolder{font-weight:bolder!important}.lh-1{line-height:1!important}.text-center{text-align:center!important}.text-decoration-none{text-decoration:none!important}.text-white{--bs-text-opacity:1;color:rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important}.text-body-secondary{--bs-text-opacity:1;color:var(--bs-secondary-color)!important}.text-body-emphasis{--bs-text-opacity:1;color:var(--bs-emphasis-color)!important}.bg-gradient{background-image:var(--bs-gradient)!important}.rounded-3{border-radius:var(--bs-border-radius-lg)!important}@media (min-width:768px){.align-items-md-center{align-items:center!important}.me-md-auto{margin-right:auto!important}.mb-md-0{margin-bottom:0!important}.p-md-5{padding:3rem!important}}@media (min-width:1200px){.fs-4{font-size:1.5rem!important}}@font-face{font-display:block;font-family:bootstrap-icons;src:url("./media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),url("./media/bootstrap-icons-OCU552PF.woff?dd67030699838ea613ee6dbda90effa6") format("woff")}.bi:before{display:inline-block;font-family:bootstrap-icons!important;font-style:normal;font-weight:400!important;font-variant:normal;text-transform:none;line-height:1;vertical-align:-.125em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.bi-collection:before{content:"\f2cc"}.bi-facebook:before{content:"\f344"}.bi-gear-fill:before{content:"\f3e2"}.bi-instagram:before{content:"\f437"}.bi-speedometer:before{content:"\f57f"}.bi-table:before{content:"\f5aa"}.bi-twitter:before{content:"\f5ef"}
-</style><link rel="stylesheet" href="styles-OIJ5ADP2.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-OIJ5ADP2.css"></noscript><style ng-app-id="ng">.bg-darkblue[_ngcontent-ng-c944967216]{position:relative}.bg-darkblue[_ngcontent-ng-c944967216]:before{content:"";position:absolute;background-color:#0d2e45;left:0;top:0;z-index:-2;width:100%;height:100%}@media screen and (min-width: 768px){.px-md-10[_ngcontent-ng-c944967216]{padding-left:6rem!important;padding-right:6rem!important}}</style><style ng-app-id="ng">.feature-icon-small[_ngcontent-ng-c3284551355]{width:3rem;height:3rem}</style></head>
-<body><!--nghm-->
-  <app-root _nghost-ng-c3253866743 ng-version="17.1.1" ngh="3" ng-server-context="ssg"><app-header _ngcontent-ng-c3253866743 _nghost-ng-c3439051591 ngh="0"><div _ngcontent-ng-c3439051591 data-bs-theme="dark" class="bg-darkblue"><div _ngcontent-ng-c3439051591 class="container pb-4"><header _ngcontent-ng-c3439051591 class="d-flex flex-wrap justify-content-center py-3 border-bottom"><a _ngcontent-ng-c3439051591 href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"><span _ngcontent-ng-c3439051591 class="fs-4 f-b"><b _ngcontent-ng-c3439051591>Daňový poradce </b><span _ngcontent-ng-c3439051591 class="text-body-secondary">Praha</span></span></a><ul _ngcontent-ng-c3439051591 class="nav nav-pills"><li _ngcontent-ng-c3439051591 class="nav-item"><a _ngcontent-ng-c3439051591 aria-current="page" class="nav-link active" href="/">Domů</a></li><li _ngcontent-ng-c3439051591 class="nav-item"><a _ngcontent-ng-c3439051591 href="menuItem.routerLink" class="nav-link">Služby</a></li><li _ngcontent-ng-c3439051591 class="nav-item"><a _ngcontent-ng-c3439051591 href="menuItem.routerLink" class="nav-link">Články</a></li><li _ngcontent-ng-c3439051591 class="nav-item"><a _ngcontent-ng-c3439051591 href="menuItem.routerLink" class="nav-link">Kontakt</a></li><!----></ul></header></div></div><!----><!----><!----></app-header><div _ngcontent-ng-c3253866743 class="content"><router-outlet _ngcontent-ng-c3253866743></router-outlet><app-home _nghost-ng-c3462464754 ngh="1"><app-full-width-jumbotron _ngcontent-ng-c3462464754 _nghost-ng-c944967216 ngh="1"><div _ngcontent-ng-c944967216 class="p-md-5 text-center text-white bg-darkblue"><div _ngcontent-ng-c944967216 class="container py-4"><h1 _ngcontent-ng-c944967216 class="col-lg-8 mx-auto display-5 fw-bolder">Váš daňový poradce v Praze</h1><p _ngcontent-ng-c944967216 class="col-lg-6 mx-auto lead fw-bolder max-width-540"> Pomůžu Vám s daňovým přiznáním, účetnictvím, daňovou evidencí a auditem. </p><img _ngcontent-ng-c944967216 class="img-fluid px-md-10" src="/assets/city_outline.webp" alt="City outline"></div></div></app-full-width-jumbotron><app-features _ngcontent-ng-c3462464754 _nghost-ng-c3284551355 ngh="2"><div _ngcontent-ng-c3284551355 class="container px-4 py-5"><div _ngcontent-ng-c3284551355 class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"><div _ngcontent-ng-c3284551355 class="col d-flex flex-column align-items-start gap-2"><h2 _ngcontent-ng-c3284551355 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2><p _ngcontent-ng-c3284551355 class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p><a _ngcontent-ng-c3284551355 href="#" class="btn btn-primary btn-lg">Primary button</a></div><div _ngcontent-ng-c3284551355 class="col"><div _ngcontent-ng-c3284551355 class="row row-cols-1 row-cols-sm-2 g-4"><div _ngcontent-ng-c3284551355 class="col d-flex flex-column gap-2"><div _ngcontent-ng-c3284551355 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"><i _ngcontent-ng-c3284551355 class="bi-collection"></i></div><h4 _ngcontent-ng-c3284551355 class="fw-semibold mb-0 text-body-emphasis">Daňově přiznání</h4><p _ngcontent-ng-c3284551355 class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p></div><div _ngcontent-ng-c3284551355 class="col d-flex flex-column gap-2"><div _ngcontent-ng-c3284551355 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"><i _ngcontent-ng-c3284551355 class="bi-gear-fill"></i></div><h4 _ngcontent-ng-c3284551355 class="fw-semibold mb-0 text-body-emphasis">Účetnictví</h4><p _ngcontent-ng-c3284551355 class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p></div><div _ngcontent-ng-c3284551355 class="col d-flex flex-column gap-2"><div _ngcontent-ng-c3284551355 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"><i _ngcontent-ng-c3284551355 class="bi-speedometer"></i></div><h4 _ngcontent-ng-c3284551355 class="fw-semibold mb-0 text-body-emphasis">Daňová evidence</h4><p _ngcontent-ng-c3284551355 class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p></div><div _ngcontent-ng-c3284551355 class="col d-flex flex-column gap-2"><div _ngcontent-ng-c3284551355 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"><i _ngcontent-ng-c3284551355 class="bi-table"></i></div><h4 _ngcontent-ng-c3284551355 class="fw-semibold mb-0 text-body-emphasis">Audit</h4><p _ngcontent-ng-c3284551355 class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p></div><!----></div></div></div></div></app-features></app-home><!----></div><app-footer _ngcontent-ng-c3253866743 _nghost-ng-c635834592 ngh="1"><div _ngcontent-ng-c635834592 class="container"><footer _ngcontent-ng-c635834592 class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"><div _ngcontent-ng-c635834592 class="col-md-4 d-flex align-items-center"><a _ngcontent-ng-c635834592 href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"><svg _ngcontent-ng-c635834592="" width="30" height="24" class="bi"><use _ngcontent-ng-c635834592="" xlink:href="#bootstrap"/></svg></a><span _ngcontent-ng-c635834592 class="mb-3 mb-md-0 text-body-secondary">© 2024 Daňový poradce Praha | by&nbsp;Ing. Matěj Kohútek</span></div><ul _ngcontent-ng-c635834592 class="nav col-md-4 justify-content-end list-unstyled d-flex"><li _ngcontent-ng-c635834592 class="ms-3"><a _ngcontent-ng-c635834592 href="#" class="text-body-secondary"><i _ngcontent-ng-c635834592 class="bi-twitter"></i></a></li><li _ngcontent-ng-c635834592 class="ms-3"><a _ngcontent-ng-c635834592 href="#" class="text-body-secondary"><i _ngcontent-ng-c635834592 class="bi-instagram"></i></a></li><li _ngcontent-ng-c635834592 class="ms-3"><a _ngcontent-ng-c635834592 href="#" class="text-body-secondary"><i _ngcontent-ng-c635834592 class="bi-facebook"></i></a></li></ul></footer></div></app-footer></app-root>
-<script src="polyfills-RX4V3J3S.js" type="module"></script><script src="scripts-5WHRHU35.js" defer></script><script src="main-GSGB4TNK.js" type="module"></script>
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Daňový poradce Praha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"0":"t0","1":"t1","3":"t3"},"c":{"0":[{"i":"t1","r":1,"t":{"13":"t2"},"c":{"13":[{"i":"t2","r":1,"x":3}]}}],"1":[],"3":[]}},{},{"t":{"11":"t4"},"c":{"11":[{"i":"t4","r":1,"x":4}]}},{"c":{"2":[{"i":"c3462464754","r":1}]}}]}</script></body></html>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="header-header">
+          <div class="header-container">
+            <a href="index.html" class="header-logo">
+              <span>Daňový poradce Praha</span>
+            </a>
+          </div>
+          <div class="header-container1">
+            <div class="header-nav">
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name8"
+              >
+                <a href="index.html" class="navigation-links-navlink">
+                  <span>Domů</span>
+                </a>
+                <a href="services.html" class="navigation-links-navlink1">
+                  <span>Služby</span>
+                </a>
+                <a href="#omne" class="navigation-links-link">
+                  <span>O mně</span>
+                </a>
+                <div class="navigation-links-btn-group">
+                  <a href="#contactForm" class="navigation-links-link1 button">
+                    <span>Kontakt</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div data-role="BurgerMenu" class="header-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="header-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="header-mobile-menu">
+            <nav class="header-nav1">
+              <div class="header-container2">
+                <img
+                  alt="image"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  class="header-image"
+                />
+                <div
+                  data-role="CloseMobileMenu"
+                  class="header-close-mobile-menu"
+                >
+                  <svg viewBox="0 0 1024 1024" class="header-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name14"
+              >
+                <a href="index.html" class="navigation-links-navlink">
+                  <span>Domů</span>
+                </a>
+                <a href="services.html" class="navigation-links-navlink1">
+                  <span>Služby</span>
+                </a>
+                <a href="#omne" class="navigation-links-link">
+                  <span>O mně</span>
+                </a>
+                <div class="navigation-links-btn-group">
+                  <a href="#contactForm" class="navigation-links-link1 button">
+                    <span>Kontakt</span>
+                  </a>
+                </div>
+              </nav>
+            </nav>
+            <div>
+              <svg viewBox="0 0 950.8571428571428 1024" class="header-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="header-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="header-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <div class="home-hero">
+          <div class="home-container1">
+            <h1 class="home-text">Anh Duc Nguyen</h1>
+            <span class="home-text01">
+              Zaměřte se na své podnikání, daně a účetnictví nechte na mě.
+            </span>
+            <div class="home-btn-group">
+              <button class="home-button button">Kontakt</button>
+              <button class="home-hero-button2 buttonFlat">
+                Nabízené služby →
+              </button>
+            </div>
+          </div>
+          <div class="home-container2">
+            <img
+              alt="image"
+              src="https://shopup.cz/downloads/stock_advisor7.png"
+              loading="eager"
+              class="home-image"
+            />
+          </div>
+        </div>
+        <div class="home-features">
+          <div class="home-features-container featuresContainer">
+            <div class="home-features1">
+              <div class="home-container3">
+                <span class="overline">
+                  <span>Služby</span>
+                  <br />
+                </span>
+                <h2 class="home-features-heading heading2">
+                  Na jaké okruhy se specializuji
+                </h2>
+                <span class="home-features-sub-heading bodyLarge">
+                  <span>
+                    <span>
+                      <span>
+                        Discover how our tax advisor services can benefit you
+                      </span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="home-container4">
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Personalized Tax Planning</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Tailored tax planning strategies to optimize your
+                        financial situation
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Tax Preparation Services</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Accurate and timely preparation of tax returns for
+                        individuals and businesses
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>IRS Issue Resolution</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Expert assistance in resolving IRS notices, audits, and
+                        other tax-related issues
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Tax Compliance Consulting</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Comprehensive guidance on tax compliance matters to
+                        ensure adherence to regulations
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Tax Compliance Consulting</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Comprehensive guidance on tax compliance matters to
+                        ensure adherence to regulations
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <span>Více podrobností najdete v cenníku</span>
+              <a href="services.html" class="home-banner-button buttonFilled">
+                Cenník služeb
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="home-faq">
+          <div class="home-faq-container faqContainer">
+            <div class="home-faq1">
+              <div class="home-container5">
+                <span class="overline">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text23 heading2">Nejčastější otázky</h2>
+                <span class="home-text24 bodyLarge">
+                  <span>
+                    Otázky, na které se mně klienti ptají nejčastěji.
+                    Zakomponovat: odkaz na KDP ČR; jsem pojištěný; portrait
+                  </span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-container6">
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>What are the benefits of hiring a tax advisor?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      A tax advisor can help you maximize deductions, minimize
+                      tax liabilities, and ensure compliance with tax laws.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How can a tax advisor help with tax planning?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      A tax advisor can create a customized tax plan to optimize
+                      your financial situation, reduce tax burdens, and plan for
+                      future tax obligations.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>
+                      What documents should I bring when meeting with a tax
+                      advisor?
+                    </span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      You should bring your previous year's tax returns, W-2
+                      forms, 1099 forms, receipts for deductible expenses, and
+                      any other relevant financial documents.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How much does it cost to hire a tax advisor?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      The cost of hiring a tax advisor can vary based on the
+                      complexity of your tax situation and the services
+                      required. Many tax advisors offer initial consultations to
+                      discuss pricing.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>Can a tax advisor help with IRS audits?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Yes, a tax advisor can represent you during an IRS audit,
+                      help gather necessary documentation, and negotiate with
+                      the IRS on your behalf.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-faq2">
+          <div class="home-faq-container1 faqContainer">
+            <div id="omne" class="home-faq3">
+              <div class="home-container7">
+                <span class="overline">
+                  <span>O MNĚ</span>
+                  <br />
+                </span>
+                <h2 class="home-text30 heading2">Nějaký text</h2>
+                <span class="home-text31 bodyLarge">
+                  <span>Můj životní příběh</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-container8">
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>What are the benefits of hiring a tax advisor?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      A tax advisor can help you maximize deductions, minimize
+                      tax liabilities, and ensure compliance with tax laws.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How can a tax advisor help with tax planning?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      A tax advisor can create a customized tax plan to optimize
+                      your financial situation, reduce tax burdens, and plan for
+                      future tax obligations.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contactForm" class="home-contact-form">
+          <div class="contact-form-container contact-form-root-class-name">
+            <div class="contact-form-container1">
+              <div class="contact-form-container2">
+                <script>
+                  (function (w,d,s,o,f,js,fjs) {
+                      w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                      js.id = '2-2bb287d15897fe2f9d89c882af9a3a8b'; js.dataset.a = 'danovyporadcepraha'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                  }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+                </script>
+
+                <div id="f-2-2bb287d15897fe2f9d89c882af9a3a8b"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-footer">
+          <div class="footer-container">
+            <div class="footer-links-container">
+              <div class="footer-container1">
+                <div class="footer-contact">
+                  <span class="footer-text">
+                    <span>Bc. Anh Duc Nguyen</span>
+                  </span>
+                  <span class="footer-text01"><span>Daňový poradce</span></span>
+                  <a href="tel:+420 702 063 226" class="footer-link">
+                    <span>+420 702 063 226</span>
+                  </a>
+                  <a
+                    href="mailto:anh.nguyen@ekp.cz?subject=Žádost o nezávaznou schůzku"
+                    class="footer-link1"
+                  >
+                    <span>anh.nguyen@ekp.cz</span>
+                  </a>
+                  <span class="footer-text02">
+                    <span>Datová schránka: 2jhgcjr</span>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container2">
+                <div class="footer-contact1">
+                  <span class="footer-text03"><span>Kancelář</span></span>
+                  <span class="footer-text04">
+                    <span>EKP Advisory, s.r.o.</span>
+                  </span>
+                  <span class="footer-text05">
+                    <span>Senovážné náměstí 992/8</span>
+                  </span>
+                  <span class="footer-text06">
+                    <span>Nové Město, 110 00 Praha</span>
+                  </span>
+                </div>
+              </div>
+              <div class="footer-container3">
+                <div class="footer-contact2">
+                  <span class="footer-text07">
+                    <span>Fakturační údaje</span>
+                  </span>
+                  <span class="footer-text08">
+                    <span>Bc. Anh Duc Nguyen</span>
+                  </span>
+                  <span class="footer-text09">
+                    <span>Senovážné náměstí 992/8</span>
+                  </span>
+                  <span class="footer-text10">
+                    <span>Nové Město, 110 00 Praha</span>
+                  </span>
+                  <span class="footer-text11">
+                    <span>IČO:&nbsp;19307039</span>
+                  </span>
+                  <span class="footer-text12">
+                    <span>Nejsem plátce DPH.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://www.kdpcr.cz/?lang=ar&amp;subweb=kdp&amp;kdp=dp&amp;dp=detaildp&amp;cid=138598"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-link2"
+            >
+              <img
+                alt="Logo komory daňových poradců"
+                src="https://www.dbtax.cz/wp-content/uploads/2019/11/logo-komora-danovych-poradcu-2.png"
+                loading="lazy"
+                class="footer-image"
+              />
+            </a>
+          </div>
+          <div class="footer-separator"></div>
+          <div class="footer-container4">
+            <span class="bodySmall footer-text13">
+              <span>© 2024 Anh Duc Nguyen, All Rights Reserved</span>
+            </span>
+            <span class="footer-text14">
+              <span>Created by Ing. Matěj Kohútek</span>
+              <br class="bodySmall" />
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
