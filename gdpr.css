@@ -539,7 +539,7 @@
   }
 }
 
-.podmnky-webu-gdpr-container {
+.podminky-webu-gdpr-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -548,7 +548,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.podmnky-webu-gdpr-hero {
+.podminky-webu-gdpr-hero {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -556,28 +556,28 @@
   align-items: flex-start;
   justify-content: center;
 }
-.podmnky-webu-gdpr-container1 {
+.podminky-webu-gdpr-container1 {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
-.podmnky-webu-gdpr-hero-heading {
+.podminky-webu-gdpr-hero-heading {
   max-width: 800px;
   text-align: center;
 }
-.podmnky-webu-gdpr-hero-sub-heading {
+.podminky-webu-gdpr-hero-sub-heading {
   font-size: 18px;
   text-align: center;
 }
-.podmnky-webu-gdpr-btn-group {
+.podminky-webu-gdpr-btn-group {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.podmnky-webu-gdpr-link {
+.podminky-webu-gdpr-link {
   color: var(--dl-color-gray-white);
   font-style: normal;
   text-align: center;
@@ -592,80 +592,80 @@
   text-decoration: none;
   background-color: var(--dl-color-custom-primary1);
 }
-.podmnky-webu-gdpr-link:hover {
+.podminky-webu-gdpr-link:hover {
   transform: scale(1.02);
 }
-.podmnky-webu-gdpr-text05 {
+.podminky-webu-gdpr-text05 {
   max-width: var(--dl-size-size-maxwidth);
   align-self: center;
   padding-left: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-fourunits);
   padding-right: var(--dl-space-space-twounits);
 }
-.podmnky-webu-gdpr-text06 {
+.podminky-webu-gdpr-text06 {
   font-weight: 700;
 }
-.podmnky-webu-gdpr-text15 {
+.podminky-webu-gdpr-text15 {
   font-weight: 700;
 }
-.podmnky-webu-gdpr-text24 {
+.podminky-webu-gdpr-text24 {
   font-weight: 700;
 }
-.podmnky-webu-gdpr-text30 {
+.podminky-webu-gdpr-text30 {
   font-weight: 700;
 }
-.podmnky-webu-gdpr-text36 {
+.podminky-webu-gdpr-text36 {
   font-weight: 700;
 }
-.podmnky-webu-gdpr-text42 {
+.podminky-webu-gdpr-text42 {
   font-weight: 700;
 }
 @media(max-width: 991px) {
-  .podmnky-webu-gdpr-hero1 {
+  .podminky-webu-gdpr-hero1 {
     flex-direction: column;
   }
-  .podmnky-webu-gdpr-container1 {
+  .podminky-webu-gdpr-container1 {
     align-items: center;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-twounits);
     padding-right: 0px;
   }
-  .podmnky-webu-gdpr-hero-heading {
+  .podminky-webu-gdpr-hero-heading {
     text-align: center;
   }
-  .podmnky-webu-gdpr-text {
+  .podminky-webu-gdpr-text {
     text-align: center;
   }
-  .podmnky-webu-gdpr-hero-sub-heading {
+  .podminky-webu-gdpr-hero-sub-heading {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
 }
 @media(max-width: 767px) {
-  .podmnky-webu-gdpr-hero1 {
+  .podminky-webu-gdpr-hero1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .podmnky-webu-gdpr-hero-sub-heading {
+  .podminky-webu-gdpr-hero-sub-heading {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
 }
 @media(max-width: 479px) {
-  .podmnky-webu-gdpr-hero1 {
+  .podminky-webu-gdpr-hero1 {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .podmnky-webu-gdpr-container1 {
+  .podminky-webu-gdpr-container1 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .podmnky-webu-gdpr-btn-group {
+  .podminky-webu-gdpr-btn-group {
     flex-direction: column;
   }
-  .podmnky-webu-gdpr-link {
+  .podminky-webu-gdpr-link {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
